@@ -3,13 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="WorkingWithElements.WorkingwithElements">
+      <class name="HTML5.HTML5VideoPlayer">
         <methods>
-          <include name="AutomatingTextBoxTestAreas"/>
-          <include name="aftertest"/>
-          <include name="beforetest"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="testHTML5VideoPlayer"/>
         </methods>
-      </class> <!-- WorkingWithElements.WorkingwithElements -->
+      </class> <!-- HTML5.HTML5VideoPlayer -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
