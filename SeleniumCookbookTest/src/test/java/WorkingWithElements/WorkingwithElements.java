@@ -79,7 +79,7 @@ public class WorkingwithElements extends BaseDriver{
 	 marit.click();
 	 
 	 driver.findElement(By.xpath("//select[@id='personal_cmbNation']/option[@value='4']")).click();
-	 
+	 driver.close();
 	 
 	 
 	 

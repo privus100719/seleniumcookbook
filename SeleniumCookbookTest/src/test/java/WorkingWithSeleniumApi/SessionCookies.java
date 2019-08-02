@@ -7,6 +7,7 @@ import org.openqa.selenium.Cookie;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.Select;
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
@@ -39,6 +40,12 @@ public WebDriver driver;
 
 	storeCookie = driver.manage().getCookieNamed("store");
 	assertEquals("french", storeCookie.getValue());
+	}
+	
+	@AfterTest
+	public void aftertest()
+	{
+		driver.close();
 	}
 
 }

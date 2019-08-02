@@ -65,7 +65,7 @@ public class FramesTest {
 	}
 	
 	
-	@Test
+//	@Test
 	public void testIFrame() {
 	
 	String currentWindow = driver.getWindowHandle();

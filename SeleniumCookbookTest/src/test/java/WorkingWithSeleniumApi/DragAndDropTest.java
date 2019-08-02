@@ -39,4 +39,9 @@ public class DragAndDropTest {
 	assertEquals("Dropped!", target.getText());
 	}
 
+	@AfterTest
+	public void aftertest()
+	{
+		driver.close();
+	}
 }

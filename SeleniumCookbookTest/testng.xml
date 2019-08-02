@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+    <classes>
+     <class name="PageObjectModel.BmiCalculatorTests2"/>
+     <class name="WorkingwithAlertsFramesandWindows.FramesTest"/>
+      <class name="DataDrivenTesting.TestNGDDT"/>
+     <!-- <class name="WorkingWithElements.WorkingwithElements"/>
+      <class name="WorkingWithSeleniumApi.NavigationTest"/>
+       <class name="DataDrivenTesting.DataProviderWithExcel"/>
+      <class name="WorkingWithElements.javaScriptExecution"/>
+      <class name="SynchronizingTests.ImplicitlyWaitTest"/>
+      <class name="WorkingwithAlertsFramesandWindows.AlertsTest"/>
+      <class name="WorkingWithSeleniumApi.JavaScriptcode"/>
+      <class name="GettingStarted.SettingUpfirefoxDriver"/>
+     
+      
+      <class name="WorkingwithAlertsFramesandWindows.WindowTest"/>
+      <class name="WorkingWithSeleniumApi.SessionCookies"/>
+      <class name="SynchronizingTests.ExplicitWait"/>
+      <class name="WorkingWithSeleniumApi.DoubleClickTest"/>
+      <class name="WorkingWithElements.TestCookies"/>
+      <class name="PageObjectModel.BmiCalcPage2"/>
+      <class name="GettingStarted.SettingUpChromeDriver"/>
+      <class name="PageObjectModel.BmiCalculatorTests"/>
+      <class name="WorkingWithSeleniumApi.browsernavigations"/>
+      <class name="WorkingWithSeleniumApi.DragAndDropTest"/>
+      <class name="DataDrivenTesting.CsvTestData"/>
+      <class name="HTML5.HTML5VideoPlayer"/>
+      <class name="FindingElements.FindingElement"/>
+      <class name="WorkingWithSeleniumApi.WorkingWithContextMenu"/>
+      <class name="GettingStarted.SettingUpIEDriver"/>
+      <class name="GettingStarted.SettingUpMSEdgeDriver"/> -->
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

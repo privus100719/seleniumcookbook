@@ -19,7 +19,6 @@ import org.testng.annotations.Test;
 public class HTML5VideoPlayer {
 
 	private WebDriver driver;
-	
 	@BeforeTest
 	public void setUp() {
 /*	System.setProperty("webdriver.chrome.driver",
@@ -29,12 +28,12 @@ public class HTML5VideoPlayer {
 	
 	}
 	
+	
 	@Test
 	public void testHTML5VideoPlayer() throws Exception {
 
 	WebElement videoPlayer = driver.findElement(By.id("vplayer"));
 	
-
 	JavascriptExecutor jsExecutor = (JavascriptExecutor) driver;
 	
 	String source = (String) jsExecutor.executeScript(

@@ -51,6 +51,7 @@ public WebDriver driver;
 	new WebDriverWait(driver, 10).until(ExpectedConditions
 	.titleIs("Selenium WebDriver"));
 	assertEquals("Selenium WebDriver", driver.getTitle());
+	driver.close();
 	
 	}
 	

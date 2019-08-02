@@ -3,13 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="HTML5.HTML5VideoPlayer">
+      <class name="FindingElements.FindingElement">
         <methods>
-          <include name="setUp"/>
-          <include name="tearDown"/>
-          <include name="testHTML5VideoPlayer"/>
+          <include name="beforetest"/>
+          <include name="settingupwithCromedriver"/>
+          <include name="aftertest"/>
         </methods>
-      </class> <!-- HTML5.HTML5VideoPlayer -->
+      </class> <!-- FindingElements.FindingElement -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

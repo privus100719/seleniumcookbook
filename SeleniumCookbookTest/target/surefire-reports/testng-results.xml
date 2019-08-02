@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="7" passed="7">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="60501" started-at="2019-08-01T09:08:06Z" finished-at="2019-08-01T09:09:06Z">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="60501" started-at="2019-08-01T09:08:06Z" finished-at="2019-08-01T09:09:06Z">
+      <class name="WorkingwithAlertsFramesandWindows.FramesTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:WorkingwithAlertsFramesandWindows.FramesTest@7a0ac6e3]" name="setUp" is-config="true" duration-ms="10154" started-at="2019-08-01T09:08:40Z" finished-at="2019-08-01T09:08:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="testFrameWithIdOrName()[pri:1, instance:WorkingwithAlertsFramesandWindows.FramesTest@7a0ac6e3]" name="testFrameWithIdOrName" duration-ms="117" started-at="2019-08-01T09:08:50Z" finished-at="2019-08-01T09:08:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testFrameWithIdOrName -->
+        <test-method status="PASS" signature="testFrameByIndex()[pri:2, instance:WorkingwithAlertsFramesandWindows.FramesTest@7a0ac6e3]" name="testFrameByIndex" duration-ms="45" started-at="2019-08-01T09:08:50Z" finished-at="2019-08-01T09:08:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testFrameByIndex -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:WorkingwithAlertsFramesandWindows.FramesTest@7a0ac6e3]" name="tearDown" is-config="true" duration-ms="12802" started-at="2019-08-01T09:08:50Z" finished-at="2019-08-01T09:09:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- WorkingwithAlertsFramesandWindows.FramesTest -->
+      <class name="DataDrivenTesting.TestNGDDT">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:DataDrivenTesting.TestNGDDT@3d24753a]" name="setUp" is-config="true" duration-ms="11627" started-at="2019-08-01T09:08:06Z" finished-at="2019-08-01T09:08:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="testBMICalculator(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:DataDrivenTesting.TestNGDDT@3d24753a]" name="testBMICalculator" duration-ms="630" started-at="2019-08-01T09:08:38Z" data-provider="testData" finished-at="2019-08-01T09:08:39Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[160]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[45]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[17.6]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Underweight]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBMICalculator -->
+        <test-method status="PASS" signature="testBMICalculator(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:DataDrivenTesting.TestNGDDT@3d24753a]" name="testBMICalculator" duration-ms="417" started-at="2019-08-01T09:08:39Z" data-provider="testData" finished-at="2019-08-01T09:08:39Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[168]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[70]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[24.8]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Normal]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBMICalculator -->
+        <test-method status="PASS" signature="testBMICalculator(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:DataDrivenTesting.TestNGDDT@3d24753a]" name="testBMICalculator" duration-ms="425" started-at="2019-08-01T09:08:39Z" data-provider="testData" finished-at="2019-08-01T09:08:40Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[181]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[89]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[27.2]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Overweight]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBMICalculator -->
+        <test-method status="PASS" signature="testBMICalculator(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:DataDrivenTesting.TestNGDDT@3d24753a]" name="testBMICalculator" duration-ms="335" started-at="2019-08-01T09:08:40Z" data-provider="testData" finished-at="2019-08-01T09:08:40Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[178]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[100]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[31.6]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Obesity]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBMICalculator -->
+      </class> <!-- DataDrivenTesting.TestNGDDT -->
+      <class name="PageObjectModel.BmiCalculatorTests2">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:PageObjectModel.BmiCalculatorTests2@59a6e353]" name="setUp" is-config="true" duration-ms="5015" started-at="2019-08-01T09:08:17Z" finished-at="2019-08-01T09:08:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="testBmiCalculation()[pri:0, instance:PageObjectModel.BmiCalculatorTests2@59a6e353]" name="testBmiCalculation" duration-ms="15620" started-at="2019-08-01T09:08:22Z" finished-at="2019-08-01T09:08:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBmiCalculation -->
+        <test-method status="PASS" signature="aftertest()[pri:0, instance:PageObjectModel.BmiCalculatorTests2@59a6e353]" name="aftertest" is-config="true" duration-ms="626" started-at="2019-08-01T09:09:03Z" finished-at="2019-08-01T09:09:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- aftertest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:DataDrivenTesting.TestNGDDT@3d24753a]" name="tearDown" is-config="true" duration-ms="2610" started-at="2019-08-01T09:09:04Z" finished-at="2019-08-01T09:09:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- PageObjectModel.BmiCalculatorTests2 -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

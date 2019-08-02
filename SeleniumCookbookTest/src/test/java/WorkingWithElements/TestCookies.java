@@ -29,5 +29,6 @@ public class TestCookies {
 
 	storeCookie = driver.manage().getCookieNamed("store");
 	assertEquals("french", storeCookie.getValue());
+	driver.close();
 	}
 }

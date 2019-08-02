@@ -35,9 +35,9 @@ public class ImplicitlyWaitTest {
 	finally {
 	driver.quit();
 	
-	
-	
+	}
 	
 	}
-	}
+	
+	
 }
