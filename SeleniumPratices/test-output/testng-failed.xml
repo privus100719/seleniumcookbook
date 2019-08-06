@@ -3,11 +3,11 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.SeleniumCookBook.example.SeleniumPratices.TextElement">
+      <class name="com.pom.practice.firstpom.pages.ElementExe">
         <methods>
-          <include name="MenuItems"/>
+          <include name="textElementText"/>
         </methods>
-      </class> <!-- com.SeleniumCookBook.example.SeleniumPratices.TextElement -->
+      </class> <!-- com.pom.practice.firstpom.pages.ElementExe -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
