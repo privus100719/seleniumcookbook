@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="com.pom.practice.firstpom.pages.LoginTest">
+        <methods>
+          <include name="TC_03in"/>
+          <include name="teardown"/>
+          <include name="setup"/>
+          <include name="TC_01init"/>
+          <include name="TC_02into"/>
+        </methods>
+      </class> <!-- com.pom.practice.firstpom.pages.LoginTest -->
+      <class name="WorkingwithAlertsFrameandWindows.WindowTest">
+        <methods>
+          <include name="testWindowUsingTitle"/>
+          <include name="tearDown"/>
+          <include name="testWindowUsingContents"/>
+          <include name="testWindowUsingName"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- WorkingwithAlertsFrameandWindows.WindowTest -->
+      <class name="WorkingwithAlertsFrameandWindows.FramesTest">
+        <methods>
+          <include name="testFrameWithIdOrName"/>
+          <include name="tearDown"/>
+          <include name="testFrameByIndex"/>
+          <include name="testIFrame"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- WorkingwithAlertsFrameandWindows.FramesTest -->
+      <class name="WorkingwithAlertsFrameandWindows.AlertsTest">
+        <methods>
+          <include name="testPrompt"/>
+          <include name="Tesrdown"/>
+          <include name="testConfirmDismiss"/>
+          <include name="testSimpleAlert"/>
+          <include name="testConfirmAccept"/>
+          <include name="Setup"/>
+        </methods>
+      </class> <!-- WorkingwithAlertsFrameandWindows.AlertsTest -->
+      <class name="ExtendingSelenium.BmiCalculatorTest">
+        <methods>
+          <include name="testBmiCalculatorLayout"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- ExtendingSelenium.BmiCalculatorTest -->
+      <class name="com.pom.practice.firstpom.pages.ElementExe">
+        <methods>
+          <include name="testElementCss"/>
+          <include name="testElementAttribute"/>
+          <include name="textElementText"/>
+        </methods>
+      </class> <!-- com.pom.practice.firstpom.pages.ElementExe -->
+      <class name="ExtendingSelenium.WebTableTest">
+        <methods>
+          <include name="testWebTableTest"/>
+          <include name="Teardown"/>
+        </methods>
+      </class> <!-- ExtendingSelenium.WebTableTest -->
+      <class name="com.pom.practice.firstpom.pages.FrameTest">
+        <methods>
+          <include name="teardown"/>
+          <include name="testFramewithIDorname"/>
+          <include name="testFrameIndex"/>
+        </methods>
+      </class> <!-- com.pom.practice.firstpom.pages.FrameTest -->
+      <class name="com.pom.practice.firstpom.pages.SeleniumAPI">
+        <methods>
+          <include name="testElemetEnable"/>
+          <include name="testisElementpresent"/>
+          <include name="testRowselectionusingControlKeys"/>
+        </methods>
+      </class> <!-- com.pom.practice.firstpom.pages.SeleniumAPI -->
+      <class name="CrossBrowserTesting.BrowserTestonChrome">
+        <methods>
+          <include name="browserstacktest"/>
+        </methods>
+      </class> <!-- CrossBrowserTesting.BrowserTestonChrome -->
+      <class name="ExtendingSelenium.Objectmaptest">
+        <methods>
+          <include name="testBmiCalculator"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- ExtendingSelenium.Objectmaptest -->
+      <class name="HTML5VideoPlayer.HTML5VideoPlayer">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="testHTML5VideoPlayer"/>
+        </methods>
+      </class> <!-- HTML5VideoPlayer.HTML5VideoPlayer -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
