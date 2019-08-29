@@ -21,7 +21,7 @@ public class FindElement
 		System.setProperty("webdriver.driver.chrome", System.getProperty("user.dir")+"\\Drivers\\chromedriver.exe");
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
-		driver.get("https://opensource-demo.orangehrmlive.com/index.php/auth/login");
+		driver.get("https://opensource-demo.orangehrmlive.com");
 	}
 	
 	@Test
@@ -31,7 +31,7 @@ public class FindElement
 		driver.findElement(By.id("txtUsername")).sendKeys("Admin");
 		driver.findElement(By.name("txtPassword")).sendKeys("admin123");
 		driver.findElement(By.className("button")).click();
-		driver.findElement(By.xpath("//a[@id=\"menu_admin_viewAdminModule\"]")).click();
+		driver.findElement(By.xpath("//a[@id=\'menu_admin_viewAdminModule\']")).click();
 		driver.findElement(By.linkText("Admin")).click();
       	driver.findElement(By.cssSelector("#menu_leave_viewLeaveModule b")).click();
 		

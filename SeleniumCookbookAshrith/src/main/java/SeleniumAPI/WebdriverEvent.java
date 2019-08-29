@@ -22,12 +22,19 @@ public class WebdriverEvent {
 		
 		driver = new ChromeDriver();
 	    driver.manage().window().maximize();
+	    driver.get("http://bit.ly/1DbdhsW");
 	    
 	}
 	
 	@Test
 	public void testEventFiringWebDriver() throws Exception {
-	EventFiringWebDriver eventDriver =new EventFiringWebDriver(driver);
+		
+		
+		driver.findElement(By.xpath("//a[text()='Get a free account']")).click();
+		
+	}
+		
+	/*EventFiringWebDriver eventDriver =new EventFiringWebDriver(driver);
 	
 	MyListener myListener = new MyListener();
 	
@@ -37,11 +44,11 @@ public class WebdriverEvent {
 	
 	eventDriver.findElement(By.xpath("//a[text()='Get a free account']")).click();
 	}
-	
+	*/
 	
 	@AfterTest
 	public void tearDown() throws Exception {
-	driver.quit();
+	driver.close();
 	}
 
 }

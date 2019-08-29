@@ -4,6 +4,7 @@ import static org.testng.Assert.assertTrue;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -34,16 +35,18 @@ WebDriver driver;
 	{
 		
 	
-		driver.findElement(By.name("q")).sendKeys("selenium");
+		 WebElement element = driver.findElement(By.name("q"));
+		 element.sendKeys("Selenium");
+		 element.click();
+		 
+		 driver.findElement(By.xpath("//*[@id=\"tsf\"]/div[2]/div/div[2]/div[2]/div[2]/center/input[1]")).click();
 		
-		driver.findElement(By.xpath("//*[@id=\"tsf\"]/div[2]/div/div[3]/center/input[1]")).click();
 		
 		
-		
-		WebDriverWait wait = new WebDriverWait(driver, 10);
-		wait.until(ExpectedConditions.titleContains("selenium"));
+		 WebDriverWait wait = new WebDriverWait(driver, 10);
+		 wait.until(ExpectedConditions.titleContains("Selenium - Google Search"));
 	
-		assertTrue(driver.getTitle().toLowerCase().startsWith("selenium"));
+		 assertTrue(driver.getTitle().toLowerCase().startsWith("selenium"));
 		
 	}
 	
@@ -54,5 +57,4 @@ WebDriver driver;
 		driver.quit();
 		
 	}
-
 }

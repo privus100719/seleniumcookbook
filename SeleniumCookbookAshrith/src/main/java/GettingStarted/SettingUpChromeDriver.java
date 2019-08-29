@@ -20,7 +20,7 @@ WebDriver driver;
 	    System.setProperty(FirefoxDriver.SystemProperty.BROWSER_LOGFILE, "C:\\Windows\\Temp\\logs.txt");
 		System.setProperty("webdriver.driver.chrome", System.getProperty("user.dir")+"\\Drivers\\chromedriver.exe");
 		driver = new ChromeDriver();
-		driver.get("https://opensource-demo.orangehrmlive.com/index.php/auth/login");
+		driver.get("https://opensource-demo.orangehrmlive.com");
 	}
 	
 	@Test

@@ -1,17 +1,21 @@
 package ExtendingSelenium;
 
-import org.junit.Assert;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.Assert;
 import org.testng.annotations.AfterClass;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
-import static org.junit.Assert.*;
+
 
 public class WebTableTest {
 	
 	WebDriver driver;
+	
+	@BeforeClass(enabled= false)
 	
 	public void Setup() {
 		
@@ -21,7 +25,7 @@ public class WebTableTest {
 		
 		driver.manage().window().maximize();
 		
-		driver.get("driver.get(\"http:// cookbook.seleniumacademy.com/Locators.\r\n");
+		driver.get("http://cookbook.seleniumacademy.com/Locators.html");
 	
 	}
 
@@ -48,6 +52,5 @@ public class WebTableTest {
 		
 		
 		driver.close();
-		driver.quit();
-	}
+		}
 }

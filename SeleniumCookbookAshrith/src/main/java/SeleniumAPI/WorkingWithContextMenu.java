@@ -11,6 +11,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.SkipException;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
@@ -30,7 +31,7 @@ public WebDriver driver;
 		driver.manage().window().maximize();
 	}
 
-	@Test(enabled=false)
+	@Test
 	public void testContextMenu() {
 		
 	WebElement clickMeElement =driver.findElement(By.cssSelector("div.context-menuone.box.menu-1"));
@@ -41,6 +42,7 @@ public WebDriver driver;
 	builder.contextClick(clickMeElement).moveToElement(editMenuItem).click().perform();
 	
 	WebDriverWait wait = new WebDriverWait(driver, 10);
+	
 	Alert alert = wait.until(ExpectedConditions.alertIsPresent());
 	
 	assertEquals("clicked: edit", alert.getText());

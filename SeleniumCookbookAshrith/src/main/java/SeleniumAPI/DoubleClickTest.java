@@ -28,8 +28,10 @@ public class DoubleClickTest {
 		
 		
 		driver = new ChromeDriver();
-		driver.get("http://cookbook.seleniumacademy.com/DoubleClickDemo.html");
+		
 		driver.manage().window().maximize();
+		
+		driver.get("http://cookbook.seleniumacademy.com/DoubleClickDemo.html");
 		
 	}
 	
@@ -40,9 +42,10 @@ public class DoubleClickTest {
 	
 	WebElement message = driver.findElement(By.id("message"));
 
-	assertEquals("rgba(0, 0, 255, 1)",
-	message.getCssValue("background-color"));
+	assertEquals("rgba(0, 0, 255, 1)",message.getCssValue("background-color"));
+	
 	Actions builder = new Actions(driver);
+	
 	builder.doubleClick(message).perform();
 
 	assertEquals("rgba(255, 255, 0, 1)",message.getCssValue("background-color"));

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test name="Test">
+    <classes>
+      <class name="FindingElements.FindElement"/>
+      <class name="WorkingwithAlertsFrameandWindows.FramesTest"/>
+      <class name="SynchronizingTests.ExplicitWait"/>
+      <class name="ExtendingSelenium.BmiCalculatorTest"/>
+      <class name="HTML5VideoPlayer.HTML5VideoPlayer"/>
+      <class name="SeleniumAPI.ScreenShottest"/>
+      <class name="ExtendingSelenium.Objectmaptest"/>
+      <class name="ExtendingSelenium.WebTableTest"/>
+      <class name="WorkingWithElements.SessionCookies"/>
+      <class name="com.pom.practice.firstpom.pages.LoginTest"/>
+      <class name="GettingStarted.SettingUpFirefox"/>
+      <class name="CrossBrowserTesting.BrowserTestonChrome"/>
+      <class name="WorkingwithAlertsFrameandWindows.WindowTest"/>
+      <class name="SeleniumAPI.DragandDrop"/>
+      <class name="SynchronizingTests.ImplicitlyWaitTest"/>
+      <class name="PageObjectModel.BmiCalcPage2"/>
+      <class name="GettingStarted.SettingUpChromeDriver"/>
+      <class name="SeleniumAPI.WebdriverEvent"/>
+      <class name="PageObjectModel.BmiCalculatorTests"/>
+      <class name="SeleniumAPI.WorkingWithContextMenu"/>
+      <class name="SeleniumAPI.DoubleClickTest"/>
+      <class name="SeleniumAPI.NavigationTest"/>
+      <class name="PageObjectModel.BmiCalculatorTests2"/>
+      <class name="WorkingwithAlertsFrameandWindows.AlertsTest"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

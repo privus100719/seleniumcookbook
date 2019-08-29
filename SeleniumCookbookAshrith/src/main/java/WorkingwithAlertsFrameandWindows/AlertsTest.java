@@ -31,6 +31,11 @@ public class AlertsTest {
 	@BeforeClass
 	public void Setup() throws AWTException {
 		
+		
+		System.setProperty(FirefoxDriver.SystemProperty.DRIVER_USE_MARIONETTE, "true");
+	    System.setProperty(FirefoxDriver.SystemProperty.BROWSER_LOGFILE, "C:\\Windows\\Temp\\logs.txt");
+		
+		
 		System.setProperty("webdriver.gecko.driver", "Drivers\\geckodriver.exe");
 		driver = new FirefoxDriver();
 		
@@ -38,7 +43,7 @@ public class AlertsTest {
 		
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		
-		driver.get("https://cicd.mybsf.org");
+		driver.get("http://cookbook.seleniumacademy.com/Alerts.html");
 		
 		
 		
@@ -49,9 +54,9 @@ public class AlertsTest {
 		
 		//This is for Firefox
 		
-		driver.switchTo().alert().sendKeys("bsf" + Keys.TAB + "cloud9");
+		/*driver.switchTo().alert().sendKeys("bsf" + Keys.TAB + "cloud9");
 		
-		driver.switchTo().alert().accept();
+		driver.switchTo().alert().accept();*/
 		
 		
 		
@@ -59,21 +64,21 @@ public class AlertsTest {
 	
 	 
 		
-		@Test
+		@Test(priority=1)
 		public void testSimpleAlert() throws InterruptedException {
 		
 		driver.findElement(By.id("simple")).click();
 		
-		Alert WebDriverWait = new WebDriverWait(driver, 10)
-				
-		.until(ExpectedConditions.alertIsPresent());
+		Alert WebDriverWait = new WebDriverWait(driver, 10).until(ExpectedConditions.alertIsPresent());
 
 		Alert alert = driver.switchTo().alert();
 		
 		Thread.sleep(1000);
+		
 		String textOnAlert = alert.getText();
 		
 		Thread.sleep(1000);
+		
 		assertEquals("Hello! I am an alert box!", textOnAlert);
 		
 	    System.out.println(textOnAlert);	
@@ -81,7 +86,7 @@ public class AlertsTest {
 		alert.accept();
 		}
 		
-		@Test
+		@Test(priority=2)
 		public void testConfirmAccept() {
 			// Click Confirm button to show Confirmation Alert box
 			driver.findElement(By.id("confirm")).click();
@@ -99,7 +104,7 @@ public class AlertsTest {
 			}
 		
 
-		@Test
+		@Test(priority=3)
 		public void testConfirmDismiss() {
 		
 		driver.findElement(By.id("confirm")).click();
@@ -113,7 +118,7 @@ public class AlertsTest {
 		assertEquals("You Dismissed Alert!", message.getText());
 		}
 		
-		@Test
+		@Test(priority=4)
 		public void testPrompt() {
 			
 			driver.findElement(By.id("prompt")).click();
@@ -136,7 +141,6 @@ public class AlertsTest {
 			
 			driver.close();
 			
-			driver.quit();
 		}
 		 	
 		

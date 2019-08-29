@@ -28,7 +28,7 @@ public static WebDriver driver;
 	
 	
 	
-	@Test(priority=1, enabled=true)
+	@Test(priority=1)
 	
 	public void testFrameWithIdOrName() {
 	try {
@@ -78,7 +78,7 @@ public static WebDriver driver;
 	}
 	
 	
-	@Test
+	@Test(priority=3)
 	public void testIFrame() {
 	
 	String currentWindow = driver.getWindowHandle();
@@ -92,9 +92,11 @@ public static WebDriver driver;
 	
 	driver.switchTo().frame(twitterFrame);
 	
-	WebElement button = driver.findElement(By.id("followbutton"));
+	//WebElement button = 
+			
+			driver.findElement(By.id("follow-button")).click();
 	
-	button.click();
+	//button.click();
 	
 	try {
 
@@ -104,7 +106,7 @@ public static WebDriver driver;
 	
 	if (driver.getTitle().equals("Unmesh Gundecha (@upgundecha) on Twitter")) {
 		
-    assertEquals("Twitter Login Popup Window Found", true);
+    assertEquals("Twitter Login Popup Window Found","Twitter Login Popup Window Found");
     
 	driver.close();
 	

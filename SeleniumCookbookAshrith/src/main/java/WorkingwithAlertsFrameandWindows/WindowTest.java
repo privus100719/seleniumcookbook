@@ -6,6 +6,7 @@ import static org.testng.Assert.assertTrue;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
@@ -18,18 +19,21 @@ public class WindowTest {
 	
 	public static void setUp() {
 		
+		System.setProperty(FirefoxDriver.SystemProperty.DRIVER_USE_MARIONETTE, "true");
+	    System.setProperty(FirefoxDriver.SystemProperty.BROWSER_LOGFILE, "C:\\Windows\\Temp\\logs.txt");
+		
 		System.setProperty("webdriver.chrome.driver", "Drivers\\chromedriver.exe.");
 		
 		driver = new ChromeDriver();
 		
 		driver.manage().window().maximize();
 		
-		driver.get("http://cookbook.seleniumacademy.com/html5video.html");
+		driver.get("http://cookbook.seleniumacademy.com/Config.html");
 	}
 	
 	
 	
-	@Test
+	@Test(priority=1)
 	public void testWindowUsingName() {
 
 	String parentWindowId = driver.getWindowHandle();
@@ -58,7 +62,7 @@ public class WindowTest {
 	}
 	
 	
-	@Test
+	@Test(priority=2)
 	public void testWindowUsingTitle() {
 	
 	String parentWindowId = driver.getWindowHandle();
@@ -88,7 +92,7 @@ public class WindowTest {
 	assertEquals("Build my Car - Configuration", driver.getTitle());
 	}
 	
-	@Test
+	@Test(priority=3, enabled=false)
 	
 	public void testWindowUsingContents() {
 	

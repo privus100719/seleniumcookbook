@@ -11,8 +11,8 @@ import org.testng.annotations.Test;
 
 import com.google.common.collect.Maps;
 
-import org.junit.*;
-import static org.junit.Assert.assertEquals;
+/*import org.junit.*;
+import static org.junit.Assert.assertEquals;*/
 import static org.testng.Assert.assertEquals;
 
 public class Objectmaptest 
@@ -35,14 +35,19 @@ public class Objectmaptest
 		
 		driver.manage().window().maximize();
 		
-		driver.get("driver.get(\"http:// cookbook.seleniumacademy.com/Locators.\r\n");
+		driver.get("http://cookbook.seleniumacademy.com/bmicalculator.html");
+		
+		
 	}
 	
 	@Test
 	
 	public void testBmiCalculator() {
 		
+		
 		Objectmaptest map = new Objectmaptest();
+		
+		
 		
 		WebElement height = driver.findElement(By.className("height_field"));
 		

@@ -5,6 +5,7 @@ import static org.testng.Assert.assertEquals;
 import java.io.File;
 
 import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.By;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
@@ -27,30 +28,37 @@ public class BmiCalculatorTest {
 		
 		driver.manage().window().maximize();
 		
-		driver.get("driver.get(\"http:// cookbook.seleniumacademy.com/Locators.\r\n");
-	
+		driver.get("http://dl.dropbox.com/u/55228056/bmicalculator.html");
+		
+		
+		
+		
 	}
 	
 	@Test
 	
-	public void testBmiCalculatorLayout() throws Exception {
+	public void testBmiCalculatorLayout() throws Exception 
+	{
 		
-	String scrFile = "c:\\screenshot.png";
+		driver.findElement(By.xpath("//a[text()='Get a free account']")).click();
+		
+	String scrFile = "C:\\ScreenShots.png";
 	
-	String baseScrFile = "c:\\baseScreenshot.png";
+	String baseScrFile = "C:\\baseScreenShots.png";
 	
-	driver.get("http://dl.dropbox.com/u/55228056/bmicalculator.html");
 	
-	File screenshotFile = ((TakesScreenshot) driver)
-	.getScreenshotAs(OutputType.FILE);
+	
+	File screenshotFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+	
 	FileUtils.copyFile(screenshotFile, new File(scrFile));
 	
 	assertEquals(CompareUtil.Result.Matched,CompareUtil.CompareImage(baseScrFile, scrFile));
 	}
 	
 	@AfterTest
-	public void tearDown() throws Exception {
-	driver.quit();
+	public void tearDown()  {
+		
+	driver.close();
 	}
 
 }

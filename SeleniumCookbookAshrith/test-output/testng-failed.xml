@@ -3,15 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.pom.practice.firstpom.pages.LoginTest">
+      <class name="ExtendingSelenium.BmiCalculatorTest">
         <methods>
-          <include name="TC_03in" invocation-numbers="0"/>
-          <include name="teardown"/>
-          <include name="setup"/>
-          <include name="TC_01init" invocation-numbers="0"/>
-          <include name="TC_02into" invocation-numbers="0"/>
+          <include name="testBmiCalculatorLayout"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
         </methods>
-      </class> <!-- com.pom.practice.firstpom.pages.LoginTest -->
+      </class> <!-- ExtendingSelenium.BmiCalculatorTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

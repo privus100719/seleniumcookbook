@@ -50,6 +50,7 @@ public class LoginTest extends BaseTest
 	
 	
 	@Test(priority = 1,dataProvider = "ReadTestData", dataProviderClass = GetDataProvider.class)
+	
 	public void TC_02into(String username, String password,String UserName, String usersearch, String userrole,String empname,String EmpName,String Id,String SupName) throws IOException {
 		
 		AdminPage adminPage=PageFactory.initElements(driver, AdminPage.class);

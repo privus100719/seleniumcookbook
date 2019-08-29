@@ -24,7 +24,7 @@ public class HTML5VideoPlayer {
 	
 	public void setUp() {
 		
-		System.setProperty("webdriver.chrome.driver", "Drivers\\chromedriver.exe.");
+		System.setProperty("webdriver.chrome.driver","Drivers\\chromedriver.exe.");
 		
 		driver = new ChromeDriver();
 		
@@ -50,8 +50,8 @@ public class HTML5VideoPlayer {
 	
 	assertEquals(25, duration);
 
-	jsExecutor.executeScript("return arguments[0].play()",
-	videoPlayer);
+	jsExecutor.executeScript("return arguments[0].play()",videoPlayer);
+	
 	Thread.sleep(5000);
 	
 	jsExecutor.executeScript("arguments[0].pause()", videoPlayer);
@@ -66,7 +66,6 @@ public class HTML5VideoPlayer {
 	public void tearDown() {
 	
 	driver.close();	
-	driver.quit();
-	}
+		}
 
 }
